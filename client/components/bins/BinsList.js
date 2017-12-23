@@ -12,8 +12,8 @@ class BinsList extends Component {
 
     renderList() {
         return this.props.bins.map( ( bin ) => {
-            let url = `/bins/${bin._id}`;
-            return (
+                let url = `/bins/${bin._id}`;
+                return (
                     <li className="list-group-item"
                         key={bin._id}>
                         <Link to={url}> Bin: {bin._id}</Link>

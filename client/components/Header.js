@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 import Accounts from './Accounts';
 
 class Header extends Component {
 
+    constructor( props ) {
+        super( props );
+    }
+
     onBinClick( e ) {
         e.preventDefault();
-        Meteor.call( 'bins.insert' );
-
+        Meteor.call( 'bins.insert', ( err, binId ) => {
+                if ( !err ) {
+                    this.props.history.push( `/bins/${binId}` );
+                }
+            }
+        );
     }
 
     render() {

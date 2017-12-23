@@ -5,10 +5,10 @@ import Header from './Header';
 import BinsMain from '../components/bins/BinsMain'
 import BinsList from '../components/bins/BinsList'
 
-export default () => {
+export default ( props ) => {
     return (
         <div>
-            <Header/>
+            <Header history={props.history}/>
             <Switch>
                 <Route exact path='/' component={BinsList}/>
                 <Route path='/bins/:binId' component={BinsMain}/>
