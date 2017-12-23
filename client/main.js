@@ -1,17 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
-import { Route } from 'react-router';
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import App from './components/App';
-import Bins from '../import/collections/Bins';
 
 const routes = (
-    <BrowserRouter>
-        <div>
-            <Route path={'/'} component={App}/>
-        </div>
-    </BrowserRouter>
+    <Router>
+        <Route path="/" component={App}/>
+    </Router>
 );
 
 Meteor.startup( () => {
