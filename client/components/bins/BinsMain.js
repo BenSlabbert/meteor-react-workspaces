@@ -6,7 +6,6 @@ import { Bins } from '../../../import/collections/Bins';
 class BinsMain extends Component {
 
     render() {
-        console.log( this.props.bin );
         return (
             <div>bins main</div>
         );
