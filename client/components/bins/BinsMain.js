@@ -4,6 +4,7 @@ import { createContainer } from 'meteor/react-meteor-data';
 import { Bins } from '../../../import/collections/Bins';
 import BinsEditor from './BinsEditor';
 import BinsViewer from './BinsViewer';
+import BinShare from './BinShare';
 
 class BinsMain extends Component {
 
@@ -16,6 +17,7 @@ class BinsMain extends Component {
             <div>
                 <BinsEditor bin={this.props.bin}/>
                 <BinsViewer bin={this.props.bin}/>
+                <BinShare bin={this.props.bin}/>
             </div>
         );
     }
