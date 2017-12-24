@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
+import CodeMirror from 'react-codemirror';
+
+// imports and executes this code
+import 'codemirror/mode/markdown/markdown';
 
 class BinsEditor extends Component {
 
     render() {
         return (
-            <div>BinsEditor</div>
+            <div className="col-xs-8">
+                <h5>Input</h5>
+                <CodeMirror options={{ mode: 'markdown', lineNumbers: true }}/>
+            </div>
         );
     }
 }

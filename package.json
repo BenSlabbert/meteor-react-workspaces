@@ -9,6 +9,7 @@
     "meteor-node-stubs": "^0.3.2",
     "react": "^15.6.2",
     "react-addons-pure-render-mixin": "^15.6.2",
+    "react-codemirror": "^1.0.0",
     "react-dom": "^15.6.2",
     "react-meteor-data": "^0.2.11",
     "react-router": "^4.2.0",
